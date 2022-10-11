@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: whitesmoke;
+  color: #444;
+}
+
+.container {
+  width: 50vw;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  font-size: 1.2rem;
+  background-color: #444;
+  color: #fff;
+  padding: 9px 20px;
+  border-radius: 30px;
+  border: 3px solid #444;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #444;
+}
+
+.modal {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 4rem;
+  height: 40vh;
+  transition: all 0.3s;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal .close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.modal h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+.modal p {
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 2rem;
+}
+
+.overlay {
+  /* background-color: aqua; */
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+}
